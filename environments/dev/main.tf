@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3" {
-  source = "../modules/s3"
+  source = "../../modules/s3"
 
   project     = var.project
   environment = var.environment
@@ -13,7 +13,7 @@ module "s3" {
 
 
 module "vpc" {
-  source = "../modules/vpc"
+  source = "../../modules/vpc"
 
   project     = var.project
   environment = var.environment
@@ -25,7 +25,7 @@ module "vpc" {
 
 
 module "ec2" {
-  source = "../modules/ec2"
+  source = "../../modules/ec2"
 
   project       = var.project
   environment   = var.environment
@@ -39,7 +39,7 @@ module "ec2" {
 
 
 module "iam" {
-  source = "../modules/iam"
+  source = "../../modules/iam"
 
   project     = var.project
   environment = var.environment
