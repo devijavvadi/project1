@@ -8,7 +8,7 @@ terraform {
       tags = ["platform"]
     }
   }
-
+//nothing changed
   required_providers {
     aws = {
       source  = "hashicorp/aws"
